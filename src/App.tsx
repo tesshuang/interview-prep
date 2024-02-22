@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Accordion from "./components/Accordion";
 import Dropdown from "./components/Dropdown";
-import { friendOptions, accordions } from "./data";
+import { friendOptions, accordions, images } from "./data";
 import Modal from "./components/Modal";
 import Rating from "./components/Rating";
 import ProgressBar from "./components/ProgressBar";
+import ImageCarousel from "./components/ImageCarousel";
 
 function App() {
   const [rating, setRating] = useState<number>(0);
@@ -41,6 +42,10 @@ function App() {
       <ProgressBar value={progress} />
       <h3>Fixed Progress Bar</h3>
       <ProgressBar value={0.5} />
+      <h3>Image Cousel</h3>
+      <ImageCarousel key="regular" images={images} />
+      <h3>Image Cousel Slider</h3>
+      <ImageCarousel key="slider" images={images} isSlide />
     </div>
   );
 }

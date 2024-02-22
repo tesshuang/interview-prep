@@ -42,3 +42,11 @@ export const accordions = [
     content: 'Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.'
   },
 ]
+
+export const images = [
+  'https://source.unsplash.com/random/?night',
+  'https://source.unsplash.com/random/?city',
+  'https://source.unsplash.com/random/?cat',
+  'https://source.unsplash.com/random/?sand',
+  'https://source.unsplash.com/random/?sea',
+]
