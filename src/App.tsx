@@ -7,6 +7,7 @@ import Modal from "./components/Modal";
 import Rating from "./components/Rating";
 import ProgressBar from "./components/ProgressBar";
 import ImageCarousel from "./components/ImageCarousel";
+import Autocomplete from "./components/Autocomplete";
 
 function App() {
   const [rating, setRating] = useState<number>(0);
@@ -28,6 +29,8 @@ function App() {
 
   return (
     <div className="App">
+      <h3 className="text-xl font-bold">Autocomplete</h3>
+      <Autocomplete placeholder="Enter a city name" />
       <h3 className="text-xl font-bold">Accordion</h3>
       <Accordion accordion={accordions} />
       <h4 className="font-bold">Multiple selection</h4>
